@@ -36,8 +36,8 @@ console.log('typeof isAcidic:', typeof isAcidic);
 // Question 6vi
 const headCount = 10;
 const isSparta = headCount === 300;
-console.log('value of headcount:', isSparta);
-console.log('typeof headcount:', typeof isSparta);
+console.log('value of isSparta:', isSparta);
+console.log('typeof isSparta:', typeof isSparta);
 
 // Question 6vii
 let motto = fullName;
