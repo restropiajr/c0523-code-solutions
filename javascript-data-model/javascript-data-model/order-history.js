@@ -1,3 +1,4 @@
+// Structuring a Data Model
 const orderHistory = [
   {
     orderPlaced: '08-04-2020',
