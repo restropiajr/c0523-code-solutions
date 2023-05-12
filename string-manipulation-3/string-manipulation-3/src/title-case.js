@@ -1,7 +1,6 @@
 /* exported titleCase */
 function titleCase(title) {
   const titleArray = title.toLowerCase().split(' ');
-  console.log(titleArray);
   const result = [];
   const minorWords = [
     'and',
