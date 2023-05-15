@@ -8,13 +8,13 @@ After completing this exercise, you should be able to discuss or answer the foll
   Block-level elements affect the document flow by starting on a new line.
 
 - How do inline elements affect the document flow?
-  Inline elements affect the document flow by being fragemented into a stack of line boxes.
+  Inline elements affect the document flow by being fragmented into a stack of line boxes.
 
 - What are the default width and height of a block-level element?
   The default width of a block-level element is the entire horizontal space of its parent container and the default height of a block-level element is the entire vertical space of its parent container.
 
 - What are the default width and height of an inline element?
-  The default width and height of an inline elements are that they are aligned to each other vertically or horizontally, depending on the writing mode.
+  The default width and height of an inline elements are based on the content.
 
 ## Notes
 
