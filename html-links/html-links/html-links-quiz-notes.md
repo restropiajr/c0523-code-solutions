@@ -5,13 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What HTML tag is used to link to another website?
-  The HTML tag that is used to link to another website is <a>;
+  The HTML tag that is used to link to another website is <a> with the href attribute.
 
 - What is an absolute URL?
-  An absoluate URL is a URL that points to a location defined by its absolute location on the web.
+  An absolute URL is a URL that points to a location defined by its absolute location on the web.
 
 - What is a relative URL?
-  A relative URL is a URL that points to a location that is relative to the file you are linking from.
+  A relative URL is a URL that points to a location that is relative to the file you are linking from within the file structure.
 
 ## Notes
 
