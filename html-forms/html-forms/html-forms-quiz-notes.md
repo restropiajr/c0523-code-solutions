@@ -13,8 +13,8 @@ After completing this exercise, you should be able to discuss or answer the foll
   1. text
   2. textarea
   3. select
-  4. email
-  5. radio
+  4. input
+  5. label
 
 - Give three examples of `type` attribute values for HTML `<input>` elements.
   Three examples of 'type' attribute values for HTML '<input>' elements are:
