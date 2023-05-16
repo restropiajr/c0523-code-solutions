@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 6px 16px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #d2d2d2;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
