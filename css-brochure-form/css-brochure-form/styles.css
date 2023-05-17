@@ -13,9 +13,9 @@ h2 {
   letter-spacing: 0.05rem;
 }
 
-form p {
+form label {
   font-size: 0.55rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   padding-left: 0.5rem;
   margin-top: 0.75rem;
@@ -37,15 +37,15 @@ form input::placeholder {
 }
 
 form select {
-  font-family: AtlasGrotesk, sans-serif;
-  font-weight: 300;
-  font-size: 0.6rem;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
   border: 1px solid #bcbfbe;
   border-radius: 0.25rem;
   width: 100%;
   padding-left: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   color: black;
   background-color: #f3f3f3;
 }
@@ -57,7 +57,7 @@ form button {
   background-color: #ec5d57;
   border: 1px solid white;
   color: white;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 0.3rem 1.1rem;
   margin-top: 0.45rem;
   cursor: pointer;
