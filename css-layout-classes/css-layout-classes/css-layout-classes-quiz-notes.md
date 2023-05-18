@@ -13,15 +13,15 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What are the three primary components of a page layout? (Which helper classes do you need?)
   The three primary components of a page layout are:
 
-  1. header
-  2. main
-  3. footer
+  1. Container
+  2. Rows
+  3. Columns
 
 - What is the minimum number of **columns** that you should put in a **row**?
   The minimum number of columns that you should put in a row is one.
 
 - What is the purpose of a **container**?
-  The purpose of a container is to contain the entire layout and give the whole layout a minimum width.
+  The purpose of a container is to contain the entire layout and give the whole layout a minimum width. Also, to make styling purposes easier.
 
 ## Notes
 

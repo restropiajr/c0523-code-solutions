@@ -20,33 +20,14 @@ body {
   flex-basis: calc(100% / 3);
 }
 
-.column-one-third img {
-  width: 100%;
+.column-two-thirds {
+  flex-basis: calc(100% * 2 / 3);
 }
 
 .column-one-fourth {
   flex-basis: calc(100% / 4);
 }
 
-.column-one-fourth img {
+.character {
   width: 100%;
-}
-
-.column-two-thirds {
-  flex-basis: calc(100% * 2 / 3);
-}
-
-h1 {
-  font-size: 1.8rem;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin-bottom: 0;
-}
-
-p {
-  margin-bottom: 0;
 }
