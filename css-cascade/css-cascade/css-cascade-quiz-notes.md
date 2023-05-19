@@ -7,10 +7,10 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What are the four components of "the Cascade".
   The four components of "the Cascase" are:
 
-  1. selectors
-  2. properties
-  3. values
-  4. specificity
+  1. Source Order
+  2. Inheritance
+  3. Specificity
+  4. !important
 
 - What does the term "source order" mean with respect to CSS?
   The term "source order" with respect to CSS means the order that your CSS rules are written in your stylesheet. The styling provided for an element last in your stylesheet is the styling that will ultimately take effect.
