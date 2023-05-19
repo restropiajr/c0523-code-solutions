@@ -1,0 +1,74 @@
+body {
+  font-family: karla, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.column-full p {
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  text-align: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.column-one-sixth {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-basis: calc(100% * (1 / 6));
+  margin-right: 0.5rem;
+}
+
+img {
+  width: 65%;
+}
+
+.column-two-sixth {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: calc(100% * (2 / 6));
+}
+
+h3 {
+  font-size: 0.65rem;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.column-two-sixth p {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  padding-right: 2.2rem;
+}
+
+button {
+  font-family: karla, sans-serif;
+  font-weight: 700;
+  color: #dd7b76;
+  border: 2px solid #dd7b76;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.05rem;
+  background-color: white;
+}
