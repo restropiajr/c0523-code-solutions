@@ -14,10 +14,10 @@ After completing this exercise, you should be able to discuss or answer the foll
   The setting position relative on an element affects where it appears on the page by allowing the position to be changed relative to its normal position in the document flow.
 
 - How does setting `position: absolute` on an element affect document flow?
-  The setting position: absolute on an element affects the document flow by removing it from the document flow. When an element is positioned absolutely, it is taken out of the flow of other elements, and its positioning is relative to its closest positioned ancestor or the document itself if no positioned ancestor is found.
+  The setting position: absolute on an element affects the document flow by removing it from the document flow.
 
 - How does setting `position: absolute` on an element affect where it appears on the page?
-  The setting position absolute on an element affects where it appears on the page by allowing the position to be controled precisely on the page.
+  When an element is positioned absolutely, it is taken out of the flow of other elements, and its positioning is relative to its closest positioned ancestor or the document itself if no positioned ancestor is found.
 
 - How do you constrain an absolutely positioned element to a containing block?
   To constrain an absolutely positioned element to a containing block have a position context set and then apply absolute positioning on the element.
