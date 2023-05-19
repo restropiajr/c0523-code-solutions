@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the four components of "the Cascade".
-  The four components of "the Cascase" are:
+  The four components of "the Cascade" are:
 
   1. Source Order
   2. Inheritance
@@ -21,12 +21,10 @@ After completing this exercise, you should be able to discuss or answer the foll
 - List the three selector types in order of increasing specificity.
   The three selectoe types in order of increasing specificity are:
 
-  1. #ID (1-0-0)
-  2. class (0-1-0)
-  3. element (0-0-1)
+  type (0-0-1) > class (0-1-0) > ID (1-0-0)
 
 - Why is using `!important` considered bad practice?
-  !important is considered bad practice because it reverses the cascade order of stylesheets.
+  !important is considered bad practice because it reverses the cascade order of stylesheets and makes it hard to maintain. Also makes it difficult for other web developers.
 
 ## Notes
 
