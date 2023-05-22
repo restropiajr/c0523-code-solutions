@@ -51,15 +51,19 @@ nav .contact-us {
 /* Main */
 
 .hero-section > .hero {
-  display: flex;
-  justify-content: center;
-  flex-basis: 100%;
   position: relative;
+  flex-basis: 100%;
   margin: 3rem;
+}
+
+.hero > .img-container {
+  width: 100%;
 }
 
 .hero > .img-container > img {
   width: 100%;
+  height: 425px;
+  object-fit: cover;
 }
 
 .hero > .overlay {
@@ -79,15 +83,18 @@ nav .contact-us {
   text-align: left;
   color: white;
   width: 40%;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .hero > p {
   font-size: 0.75rem;
-  top: 7rem;
+  top: 8rem;
   left: 4rem;
   width: 45.5%;
   color: white;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   font-family: Avenir, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -99,7 +106,7 @@ nav .contact-us {
   font-style: normal;
   font-weight: 500;
   position: absolute;
-  bottom: 7.5rem;
+  bottom: 4rem;
   left: 4rem;
   padding: 0.75rem 2rem;
   color: white;
@@ -132,9 +139,9 @@ nav .contact-us {
 
 .statement > p {
   color: #8f8f8f;
-  font-family: 'Tiempos Headline', sans-serif;
+  font-family: Avenir, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 0.75rem;
   width: 35%;
   text-align: center;
@@ -196,9 +203,9 @@ nav .contact-us {
 
 .learn-more-section > .statement > p {
   color: #8f8f8f;
-  font-family: 'Tiempos Headline', sans-serif;
+  font-family: Avenir, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.5rem;
   width: 100%;
@@ -287,7 +294,7 @@ nav .contact-us {
   text-align: start;
 }
 
-.links a {
+.company-information-section > .links a {
   color: white;
   font-family: Avenir, sans-serif;
   font-style: normal;
@@ -311,7 +318,7 @@ nav .contact-us {
   margin: 2rem 3rem;
 }
 
-.ending > a {
+.ending .ending-link {
   color: #757575;
   font-family: Avenir, sans-serif;
   font-style: normal;

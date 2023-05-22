@@ -50,6 +50,233 @@ nav .contact-us {
 
 /* Main */
 
+.product-header-section > .product-header {
+  position: relative;
+  margin: 5rem 3rem;
+}
+
+.product-header > .img-container {
+  width: 100%;
+}
+
+.product-header > .img-container > img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.product-header > .overlay {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.product-header > h1 {
+  position: absolute;
+  top: 6rem;
+  left: 4rem;
+  font-size: 1.75rem;
+  text-align: left;
+  color: white;
+  width: 50%;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.product-header > p {
+  font-size: 0.75rem;
+  bottom: 6.5rem;
+  left: 4rem;
+  width: 50%;
+  color: white;
+  line-height: 1.25rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+}
+
+.product-image-1-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 3rem;
+}
+
+.product-image-1-section > .img-container {
+  width: 100%;
+  flex-basis: 50%;
+}
+
+.product-image-1-section > .img-container > img {
+  width: 100%;
+}
+
+.product-image-1-section > .statement {
+  flex-basis: 50%;
+  margin-left: 3rem;
+  padding-left: 5rem;
+}
+
+.product-image-1-section > .statement > h2 {
+  color: #6d675d;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.product-image-1-section > .statement > p {
+  color: #8f8f8f;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  width: 100%;
+  line-height: 1rem;
+}
+
+.product-image-1-section > .statement > a {
+  color: #4e97ca;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.product-image-1-section > .statement > .quote {
+  color: #8f8f8f;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.75rem;
+  width: 100%;
+  line-height: 1rem;
+}
+
+.product-image-2-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 3rem;
+}
+
+.product-image-2-section > .img-container {
+  width: 100%;
+  flex-basis: 50%;
+}
+
+.product-image-2-section > .img-container > img {
+  width: 100%;
+}
+
+.product-image-2-section > .statement {
+  flex-basis: 50%;
+  margin-right: 3rem;
+  padding-right: 5rem;
+}
+
+.product-image-2-section > .statement > h2 {
+  color: #6d675d;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.product-image-2-section > .statement > p {
+  color: #8f8f8f;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  width: 100%;
+  line-height: 1rem;
+}
+
+.product-image-2-section > .statement > a {
+  color: #4e97ca;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.product-image-2-section > .statement > .quote {
+  color: #8f8f8f;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.75rem;
+  width: 100%;
+  line-height: 1rem;
+}
+
+.product-image-3-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 3rem;
+}
+
+.product-image-3-section > .img-container {
+  width: 100%;
+  flex-basis: 50%;
+}
+
+.product-image-3-section > .img-container > img {
+  width: 100%;
+}
+
+.product-image-3-section > .statement {
+  flex-basis: 50%;
+  margin-left: 3rem;
+  padding-left: 5rem;
+}
+
+.product-image-3-section > .statement > h2 {
+  color: #6d675d;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.product-image-3-section > .statement > p {
+  color: #8f8f8f;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  width: 100%;
+  line-height: 1rem;
+}
+
+.product-image-3-section > .statement > a {
+  color: #4e97ca;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.product-image-3-section > .statement > .quote {
+  color: #8f8f8f;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.75rem;
+  width: 100%;
+  line-height: 1rem;
+}
+
 /* footer */
 
 .learn-more-section {
@@ -78,9 +305,9 @@ nav .contact-us {
 
 .learn-more-section > .statement > p {
   color: #8f8f8f;
-  font-family: 'Tiempos Headline', sans-serif;
+  font-family: Avenir, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.5rem;
   width: 100%;
@@ -169,7 +396,7 @@ nav .contact-us {
   text-align: start;
 }
 
-.links a {
+.company-information-section > .links a {
   color: white;
   font-family: Avenir, sans-serif;
   font-style: normal;
@@ -193,7 +420,7 @@ nav .contact-us {
   margin: 2rem 3rem;
 }
 
-.ending > a {
+.ending .ending-link {
   color: #757575;
   font-family: Avenir, sans-serif;
   font-style: normal;
