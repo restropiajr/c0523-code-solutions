@@ -14,6 +14,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   Parameters are not required to use a JavaScript method or function.
 
 - What method of element objects lets you set up a function to be called when a specific type of event occurs?
+  The method of element objects let you set up a function to be called when a specific type of event occurs is addEventListener().
 
 - What is a callback function?
   A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
