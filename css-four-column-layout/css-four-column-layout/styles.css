@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Barlow, sans-serif;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 25%;
+}
+
+.screen-container {
+  display: flex;
+  justify-content: center;
+}
+
+.screen-container > img {
+  width: 75%;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-container > img {
+  width: 25%;
+}
