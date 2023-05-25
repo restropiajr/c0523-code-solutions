@@ -1,4 +1,4 @@
-.home-page-container {
+.contact-us-container {
   margin: 0 auto;
   width: 50%;
 }
@@ -50,6 +50,111 @@ nav .contact-us {
 
 /* Main */
 
+.contact-information-section {
+  display: flex;
+  margin: 5rem 3rem;
+}
+
+.canvas-information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 50%;
+}
+
+.canvas-information > h1 {
+  font-size: 1.75rem;
+  color: #50514f;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
+
+.canvas-information > h2 {
+  color: #0c466b;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.canvas-information > p {
+  font-size: 1.1rem;
+  width: 76%;
+  color: #b69784;
+  line-height: 1.4rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.customer-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.customer-information > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.customer-information > form > .customer-input {
+  color: #e1d7cf;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.customer-information > form > .customer-input::placeholder {
+  color: #e1d7cf;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.customer-information > form > .customer-input-textArea {
+  color: #e1d7cf;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.customer-information > form > .customer-input-textArea::placeholder {
+  color: #e1d7cf;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  resize: none;
+  overflow: hidden;
+}
+
+.customer-information > button {
+  padding: 0.5rem;
+  color: white;
+  background-color: #294464;
+  border: 1px solid #294464;
+  border-radius: 0.25rem;
+  width: 15%;
+}
+
 /* footer */
 
 .learn-more-section {
@@ -78,9 +183,9 @@ nav .contact-us {
 
 .learn-more-section > .statement > p {
   color: #8f8f8f;
-  font-family: 'Tiempos Headline', sans-serif;
+  font-family: Avenir, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.5rem;
   width: 100%;
@@ -169,7 +274,7 @@ nav .contact-us {
   text-align: start;
 }
 
-.links a {
+.company-information-section > .links a {
   color: white;
   font-family: Avenir, sans-serif;
   font-style: normal;
@@ -193,7 +298,7 @@ nav .contact-us {
   margin: 2rem 3rem;
 }
 
-.ending > a {
+.ending .ending-link {
   color: #757575;
   font-family: Avenir, sans-serif;
   font-style: normal;

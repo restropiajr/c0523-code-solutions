@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="home-page-container">
+    <div class="contact-us-container">
       <header>
         <div class="logo">
           <a href="../index.html">
@@ -27,7 +27,52 @@
         </nav>
       </header>
 
-      <main></main>
+      <main>
+        <section class="contact-information-section">
+          <div class="canvas-information">
+            <h1>Get in touch with Canvas</h1>
+            <h2>(800) 555-5555</h2>
+            <p>
+              We would be delighted to show you a demo, put you in touch with
+              current customers, get you started with access to a sandbox, and
+              answer any questions you have about working with Canvas.
+            </p>
+          </div>
+          <div class="customer-information">
+            <form id="customer-information">
+              <input
+                class="customer-input"
+                type="text"
+                name="name"
+                placeholder="Name" />
+              <input
+                class="customer-input"
+                type="text"
+                name="practice-name"
+                placeholder="Practice Name" />
+              <input
+                class="customer-input"
+                type="email"
+                name="email"
+                placeholder="email@domain.com" />
+              <input
+                class="customer-input"
+                type="text"
+                name="phone-number"
+                placeholder="Phone (optional)" />
+              <textarea
+                class="customer-input-textArea"
+                name="other-information"
+                cols="30"
+                rows="3"
+                placeholder="Tell us more about your practice and interest in Canvas. (optional)"></textarea>
+            </form>
+            <button id="submit-button" form="customer-information">
+              Submit
+            </button>
+          </div>
+        </section>
+      </main>
 
       <footer>
         <section class="learn-more-section">
@@ -67,8 +112,10 @@
         </section>
 
         <section class="ending">
-          <a href="#">Privacy &amp; Terms</a>
-          <a href="contact-us.html">Contact Us</a>
+          <a class="ending-link" href="#">Privacy &amp; Terms</a>
+          <a class="ending-link" href="../Contact-Us/contact-us.html"
+            >Contact Us</a
+          >
         </section>
       </footer>
     </div>
