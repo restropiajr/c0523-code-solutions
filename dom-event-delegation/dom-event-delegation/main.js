@@ -8,8 +8,7 @@ $taskList.addEventListener('click', (event) => {
     event.target.closest('.task-list-item')
   );
 
-  const $removedTaskListItem = event.target.closest('.task-list-item');
   if (event.target.matches('button')) {
-    $removedTaskListItem.remove();
+    event.target.closest('.task-list-item').remove();
   }
 });
