@@ -1,4 +1,4 @@
-.home-page-container {
+.blog-container {
   margin: 0 auto;
   width: 50%;
 }
@@ -78,9 +78,9 @@ nav .contact-us {
 
 .learn-more-section > .statement > p {
   color: #8f8f8f;
-  font-family: 'Tiempos Headline', sans-serif;
+  font-family: Avenir, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.5rem;
   width: 100%;
@@ -169,7 +169,7 @@ nav .contact-us {
   text-align: start;
 }
 
-.links a {
+.company-information-section > .links a {
   color: white;
   font-family: Avenir, sans-serif;
   font-style: normal;
@@ -193,7 +193,7 @@ nav .contact-us {
   margin: 2rem 3rem;
 }
 
-.ending > a {
+.ending .ending-link {
   color: #757575;
   font-family: Avenir, sans-serif;
   font-style: normal;

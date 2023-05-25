@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="home-page-container">
+    <div class="blog-container">
       <header>
         <div class="logo">
           <a href="../index.html">
@@ -29,7 +29,26 @@
         </nav>
       </header>
 
-      <main></main>
+      <main>
+        <section class="subscribe-section">
+          <h1>Canvas Medical News and Insights</h1>
+          <p>Subscribe for updates, date, and essays on American primary</p>
+          <form id="subscribe-form">
+            <input
+              class="customer-input"
+              type="email"
+              name="email"
+              placeholder="Enter your email address" />
+            <label for="subscribe-form"></label>
+          </form>
+          <button type="submit">Subscribe</button>
+        </section>
+
+        <section class="events-section">
+          <div class="events-row-one"></div>
+          <div class="events-row-two"></div>
+        </section>
+      </main>
 
       <footer>
         <section class="learn-more-section">
@@ -69,8 +88,10 @@
         </section>
 
         <section class="ending">
-          <a href="#">Privacy &amp; Terms</a>
-          <a href="../Contact-Us/contact-us.html">Contact Us</a>
+          <a class="ending-link" href="#">Privacy &amp; Terms</a>
+          <a class="ending-link" href="../Contact-Us/contact-us.html"
+            >Contact Us</a
+          >
         </section>
       </footer>
     </div>
