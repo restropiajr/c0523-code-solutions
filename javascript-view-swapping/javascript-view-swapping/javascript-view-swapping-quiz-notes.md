@@ -8,7 +8,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   The node (element object) that was associated with the event.
 
 - What is the affect of setting an element to `display: none`?
-  It does not display on the browser.
+  It does not display on the browser. Also, takes up no space.
 
 - What does the `element.matches()` method take as an argument and what does it return?
   CSS selector and it returns a boolean value.
@@ -20,7 +20,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   each step
 
 - If you were to add another tab and view to your HTML, but you didn't use event delegation, how would your JavaScript code be written instead?
-  You write the code under the new tab element.
+  You write the code under the new tab element. (More conditional statements and event listener on each new tab)
 
 - If you didn't use a loop to conditionally show or hide the views in the page, how would your JavaScript code be written instead?
   Using event listeners to each tab and view to turn them on via their classes.
