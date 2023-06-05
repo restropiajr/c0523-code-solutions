@@ -1,5 +1,6 @@
+const $message = document.querySelector('.message');
+
 function helloThere() {
-  const $message = document.querySelector('.message');
   $message.textContent = 'Hello There';
 }
 
