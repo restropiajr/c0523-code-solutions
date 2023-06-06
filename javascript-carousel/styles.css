@@ -1,0 +1,58 @@
+.hidden {
+  display: none !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+}
+
+.slide {
+  width: 40%;
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.fa-arrow-right {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.circle-controls {
+  position: absolute;
+  bottom: 5%;
+  left: 43.5%;
+}
+
+.fa-circle {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
