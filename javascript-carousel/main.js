@@ -4,42 +4,42 @@ const $rightArrow = document.querySelector('.fa-arrow-right');
 const $circles = document.querySelectorAll('.fa-circle');
 let slideIndex = 0;
 
-function showSlide() {
+function showSlide(index) {
   for (const $slide of $slides) {
     $slide.classList.add('hidden');
   }
 
-  $slides[slideIndex].classList.remove('hidden');
+  $slides[index].classList.remove('hidden');
 }
 
-function showCircle() {
+function showCircle(index) {
   for (const $circle of $circles) {
     $circle.classList.remove('fa-solid');
     $circle.classList.add('fa-regular');
   }
 
-  $circles[slideIndex].classList.remove('fa-regular');
-  $circles[slideIndex].classList.add('fa-solid');
+  $circles[index].classList.remove('fa-regular');
+  $circles[index].classList.add('fa-solid');
 }
 
 function previousSlide() {
   slideIndex = (slideIndex - 1 + $slides.length) % $slides.length;
-  showSlide();
-  showCircle();
+  showSlide(slideIndex);
+  showCircle(slideIndex);
 }
 
 function nextSlide() {
   slideIndex = (slideIndex + 1) % $slides.length;
-  showSlide();
-  showCircle();
+  showSlide(slideIndex);
+  showCircle(slideIndex);
 }
 
 function circleNavigation() {
   for (let i = 0; i < $circles.length; i++) {
     $circles[i].addEventListener('click', (event) => {
       slideIndex = i;
-      showSlide();
-      showCircle();
+      showSlide(slideIndex);
+      showCircle(slideIndex);
     });
   }
 }
