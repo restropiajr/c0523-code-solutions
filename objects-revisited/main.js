@@ -36,6 +36,7 @@ function addWeekends() {
   }
 }
 
+// createEmployee function
 function createEmployee(employeeObj) {
   business.employees[employeeObj] = {
     position: '',
@@ -43,6 +44,7 @@ function createEmployee(employeeObj) {
   };
 }
 
+// randomWorkingDays function
 function randomWorkingDays(daysOpen) {
   const numDaysWorking = Math.floor(Math.random() * 5 + 1);
   const daysWorking = [];
@@ -56,6 +58,7 @@ function randomWorkingDays(daysOpen) {
   return daysWorking;
 }
 
+// checkIfFullTime function
 function checkIfFullTime(employeeObj) {
   if (employeeObj.daysOfWeekWorking.length >= 5) {
     return true;
@@ -100,19 +103,21 @@ function deleteEmployee(employeeName) {
   business.totalEmployees--;
 }
 
+// checkIfFullTimeCurrentEmployee function
+function checkIfFullTimeCurrentEmployee() {
+  for (const employeeName in business.employees) {
+    if (business.employees[employeeName].daysOfWeekWorking.length >= 5) {
+      business.employees[employeeName].fullTime = true;
+    } else {
+      business.employees[employeeName].fullTime = false;
+    }
+  }
+}
+
 // DOMContentLoaded event listener
 window.addEventListener('DOMContentLoaded', (event) => {
   addWeekends();
 
-  function checkIfFullTimeCurrentEmployee() {
-    for (const employeeName in business.employees) {
-      if (business.employees[employeeName].daysOfWeekWorking.length >= 5) {
-        business.employees[employeeName].fullTime = true;
-      } else {
-        business.employees[employeeName].fullTime = false;
-      }
-    }
-  }
   checkIfFullTimeCurrentEmployee();
 
   addEmployees();
