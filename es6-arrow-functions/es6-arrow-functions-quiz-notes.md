@@ -51,7 +51,7 @@ After completing this exercise, you should be able to discuss or answer the foll
     1
 
   - What value does it return?
-    string
+    nothing
 
   - How many arguments are passed to the function `bar`?
     1
