@@ -36,83 +36,59 @@ function addWeekends() {
   }
 }
 
+function createEmployee(employeeObj) {
+  business.employees[employeeObj] = {
+    position: '',
+    daysOfWeekWorking: '',
+  };
+}
+
+function randomWorkingDays(daysOpen) {
+  const numDaysWorking = Math.floor(Math.random() * 5 + 1);
+  const daysWorking = [];
+
+  for (let i = 0; i < numDaysWorking; i++) {
+    const randomDayIndex = Math.floor(Math.random() * daysOpen.length);
+    if (!daysWorking.includes(daysOpen[randomDayIndex])) {
+      daysWorking.push(daysOpen[randomDayIndex]);
+    }
+  }
+  return daysWorking;
+}
+
+function checkIfFullTime(employeeObj) {
+  if (employeeObj.daysOfWeekWorking.length >= 5) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // addEmployees function
 function addEmployees() {
   const xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
   xhr.responseType = 'json';
   xhr.addEventListener('load', (event) => {
-    function createEmployee(employeeObj) {
-      business.employees[employeeObj] = {
-        position: '',
-        daysOfWeekWorking: '',
-      };
-    }
-
-    function randomWorkingDays(daysOpen) {
-      const numDaysWorking = Math.floor(Math.random() * 5 + 1);
-      const daysWorking = [];
-
-      for (let i = 0; i < numDaysWorking; i++) {
-        const randomDayIndex = Math.floor(Math.random() * daysOpen.length);
-        if (!daysWorking.includes(daysOpen[randomDayIndex])) {
-          daysWorking.push(daysOpen[randomDayIndex]);
-        }
-      }
-      return daysWorking;
-    }
-
-    function checkIfFullTime(employeeObj) {
-      if (employeeObj.daysOfWeekWorking.length >= 5) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
     for (let i = 0; i < 4; i++) {
       const employeeName = xhr.response[i].name;
+      createEmployee(employeeName);
+      business.employees[employeeName].daysOfWeekWorking = randomWorkingDays(
+        business.daysOpen
+      );
+      business.employees[employeeName].fullTime = checkIfFullTime(
+        business.employees[employeeName]
+      );
       if (i === 0) {
-        createEmployee(employeeName);
         business.employees[employeeName].position = 'HR';
-        business.employees[employeeName].daysOfWeekWorking = randomWorkingDays(
-          business.daysOpen
-        );
-        business.employees[employeeName].fullTime = checkIfFullTime(
-          business.employees[employeeName]
-        );
-        business.totalEmployees++;
       } else if (i === 1) {
-        createEmployee(employeeName);
         business.employees[employeeName].position = 'custodian';
-        business.employees[employeeName].daysOfWeekWorking = randomWorkingDays(
-          business.daysOpen
-        );
-        business.employees[employeeName].fullTime = checkIfFullTime(
-          business.employees[employeeName]
-        );
-        business.totalEmployees++;
       } else if (i === 2) {
-        createEmployee(employeeName);
         business.employees[employeeName].position = 'writer';
-        business.employees[employeeName].daysOfWeekWorking = randomWorkingDays(
-          business.daysOpen
-        );
-        business.employees[employeeName].fullTime = checkIfFullTime(
-          business.employees[employeeName]
-        );
-        business.totalEmployees++;
       } else if (i === 3) {
-        createEmployee(employeeName);
         business.employees[employeeName].position = 'staff engineer';
-        business.employees[employeeName].daysOfWeekWorking = randomWorkingDays(
-          business.daysOpen
-        );
-        business.employees[employeeName].fullTime = checkIfFullTime(
-          business.employees[employeeName]
-        );
-        business.totalEmployees++;
       }
+      business.totalEmployees++;
     }
   });
   xhr.send();
