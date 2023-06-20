@@ -67,9 +67,9 @@ console.log('tern2:', tern2);
  * Expected: `oc1 = 'Something'`, `oc2 = undefined`, `oc3 = undefined`.
  */
 
-const oc1 = v1?.value ?? undefined;
-const oc2 = v2?.value ?? undefined;
-const oc3 = v3?.value ?? undefined;
+const oc1 = v1?.value;
+const oc2 = v2?.value;
+const oc3 = v3?.value;
 console.log('oc1:', oc1);
 console.log('oc2:', oc2);
 console.log('oc3:', oc3);
