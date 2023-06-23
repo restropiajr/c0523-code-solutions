@@ -12,7 +12,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   To access props in a component, you use them as variables within the component
 
 - How do you pass props to a component?
-  To access props in a component, you can provide them as attribute when rendering the component.
+  To pass props to a component, you can provide them as attribute when rendering the component.
 
 - How do you write JavaScript expressions in JSX?
   {}
