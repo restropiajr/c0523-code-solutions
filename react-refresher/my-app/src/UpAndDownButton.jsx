@@ -3,9 +3,5 @@ export default function UpAndDownButton({ text, onCustomClick }) {
     onCustomClick();
   }
 
-  return (
-    <>
-      <button onClick={handleClick}>{text}</button>
-    </>
-  );
+  return <button onClick={handleClick}>{text}</button>;
 }
