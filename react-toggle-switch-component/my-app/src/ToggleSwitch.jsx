@@ -12,37 +12,46 @@ const defaultToggleSwitchWrapperStyle = {
   borderRadius: '1.25rem',
   backgroundColor: 'white',
   display: 'flex',
+  margin: '1rem',
 };
 
 export default function ToggleSwitch() {
-  const [backgroundColor, setBackgroundColor] = useState('white');
-  const [justifyContent, setJustifyContent] = useState('flex-start');
+  const [wrapperStyle, setWrapperStyle] = useState({
+    backgroundColor: 'white',
+    justifyContent: 'flex-start',
+  });
   const [switchText, setSwitchText] = useState('OFF');
 
   function handleClick() {
     if (switchText === 'OFF') {
-      setBackgroundColor('green');
-      setJustifyContent('flex-end');
+      setWrapperStyle({
+        backgroundColor: 'green',
+        justifyContent: 'flex-end',
+      });
       setSwitchText('ON');
     } else if (switchText === 'ON') {
-      setBackgroundColor('white');
-      setJustifyContent('flex-start');
+      setWrapperStyle({
+        backgroundColor: 'white',
+        justifyContent: 'flex-start',
+      });
       setSwitchText('OFF');
     }
   }
 
   const ToggleSwitchWrapperStyle = {
     ...defaultToggleSwitchWrapperStyle,
-    backgroundColor: backgroundColor,
-    justifyContent: justifyContent,
+    backgroundColor: wrapperStyle.backgroundColor,
+    justifyContent: wrapperStyle.justifyContent,
   };
 
   return (
     <>
-      <div onClick={handleClick} style={ToggleSwitchWrapperStyle}>
-        <button style={defaultToggleSwitchStyle}></button>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div onClick={handleClick} style={ToggleSwitchWrapperStyle}>
+          <button style={defaultToggleSwitchStyle}></button>
+        </div>
+        <p>{switchText}</p>
       </div>
-      <p>{switchText}</p>
     </>
   );
 }
