@@ -9,31 +9,32 @@ const defaultStyle = {
 
 export default function HotButton() {
   const [count, setCount] = useState(0);
-  const [backgroundColor, setBackgroundColor] = useState('#351C75');
-  const [color, setColor] = useState('white');
+  const [colors, setColors] = useState({
+    backgroundColor: '#351C75',
+    color: 'white',
+  });
 
   function handleClick() {
     if (count < 3) {
-      setBackgroundColor('#351C75');
+      setColors({ backgroundColor: '#351C75', color: 'white' });
     } else if (count < 6) {
-      setBackgroundColor('#674EA7');
+      setColors({ backgroundColor: '#674EA7', color: 'white' });
     } else if (count < 9) {
-      setBackgroundColor('#E06666');
+      setColors({ backgroundColor: '#E06666', color: 'white' });
     } else if (count < 12) {
-      setBackgroundColor('#F6B26B');
-      setColor('black');
+      setColors({ backgroundColor: '#F6B26B', color: 'black' });
     } else if (count < 15) {
-      setBackgroundColor('#FFFF00');
+      setColors({ backgroundColor: '#FFFF00', color: 'black' });
     } else if (count < 18) {
-      setBackgroundColor('#FFFFFF');
+      setColors({ backgroundColor: '#FFFFFF', color: 'black' });
     }
     setCount(count + 1);
   }
 
   const hotButtonStyle = {
     ...defaultStyle,
-    backgroundColor: backgroundColor,
-    color: color,
+    backgroundColor: colors.backgroundColor,
+    color: colors.color,
   };
 
   return (
