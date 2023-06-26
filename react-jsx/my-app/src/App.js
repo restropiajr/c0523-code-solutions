@@ -1,10 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 
-function MyButton() {
-  return <button>Click Me!</button>;
-}
-
 function App() {
   return (
     <div className="App">
@@ -18,7 +14,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer">
-          <MyButton />
+          <button>Click Me!</button>
         </a>
       </header>
     </div>
