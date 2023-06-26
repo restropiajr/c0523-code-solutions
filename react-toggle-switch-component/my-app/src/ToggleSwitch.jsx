@@ -45,13 +45,11 @@ export default function ToggleSwitch() {
   };
 
   return (
-    <>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div onClick={handleClick} style={ToggleSwitchWrapperStyle}>
-          <button style={defaultToggleSwitchStyle}></button>
-        </div>
-        <p>{switchText}</p>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div onClick={handleClick} style={ToggleSwitchWrapperStyle}>
+        <button style={defaultToggleSwitchStyle}></button>
       </div>
-    </>
+      <p>{switchText}</p>
+    </div>
   );
 }
