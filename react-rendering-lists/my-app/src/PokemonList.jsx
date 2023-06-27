@@ -3,9 +3,5 @@ export default function PokemonList({ pokedex }) {
     <li key={pokemon.number}>{pokemon.name}</li>
   ));
 
-  return (
-    <>
-      <ul>{pokemonList}</ul>
-    </>
-  );
+  return <ul>{pokemonList}</ul>;
 }
