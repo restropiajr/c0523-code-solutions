@@ -9,11 +9,22 @@ export default function Indicators({
   currentIndex,
   onCustomClick,
 }: IndicatorProps) {
+  function handleClick(index: number) {
+    onCustomClick(index);
+  }
+
   function renderIndicator() {
     const indicators = [];
-    for (let i = 0; i < count; i++) {
+    for (let index = 0; index < count; index++) {
       indicators.push(
-        <button className="w-8 border border-solid border-black">{i}</button>
+        <button
+          onClick={() => handleClick(index)}
+          className="rounded w-8 border border-solid border-black"
+          style={
+            index === currentIndex ? { backgroundColor: 'lightblue' } : {}
+          }>
+          {index}
+        </button>
       );
     }
     return indicators;

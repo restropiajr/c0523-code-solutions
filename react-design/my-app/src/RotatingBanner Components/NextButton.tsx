@@ -1,5 +1,17 @@
-export default function NextButton() {
+type NextButtonProps = {
+  onCustomClick: () => void;
+};
+
+export default function NextButton({ onCustomClick }: NextButtonProps) {
+  function handleClick() {
+    onCustomClick();
+  }
+
   return (
-    <button className="m-1 p-1 border border-solid border-black">NEXT</button>
+    <button
+      onClick={handleClick}
+      className="rounded m-1 p-1 border border-solid border-black">
+      NEXT
+    </button>
   );
 }
