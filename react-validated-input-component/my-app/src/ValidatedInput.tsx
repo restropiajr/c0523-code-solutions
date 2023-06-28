@@ -1,36 +1,44 @@
 import { ChangeEvent, useState, KeyboardEvent } from 'react';
 
 export default function ValidatedInput() {
+  const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState({
     message: '',
     displayStyle: '',
     color: '',
   });
-  const [password, setPassword] = useState('');
 
   function handleOnChange(event: ChangeEvent<HTMLInputElement>) {
-    setPassword(event.target.value);
+    setPassword((prevPassword) => {
+      return event.target.value;
+    });
+
     const newPassword = event.target.value;
 
-    if (newPassword.length === 0) {
-      setErrorMessage({
-        message: 'A password is required.',
-        displayStyle: 'fa-solid fa-x',
-        color: 'red',
-      });
-    } else if (newPassword.length >= 1 && newPassword.length < 8) {
-      setErrorMessage({
-        message: 'Your password is too short.',
-        displayStyle: 'fa-solid fa-x',
-        color: 'red',
-      });
-    } else if (newPassword.length >= 8) {
-      setErrorMessage({
-        message: '',
-        displayStyle: 'fa-solid fa-check',
-        color: 'green',
-      });
-    }
+    setErrorMessage((prevErrorMessage) => {
+      if (newPassword.length === 0) {
+        return {
+          ...prevErrorMessage,
+          message: 'A password is required.',
+          displayStyle: 'fa-solid fa-x',
+          color: 'red',
+        };
+      } else if (newPassword.length >= 1 && newPassword.length < 8) {
+        return {
+          ...prevErrorMessage,
+          message: 'Your password is too short.',
+          displayStyle: 'fa-solid fa-x',
+          color: 'red',
+        };
+      } else {
+        return {
+          ...prevErrorMessage,
+          message: '',
+          displayStyle: 'fa-solid fa-check',
+          color: 'green',
+        };
+      }
+    });
   }
 
   function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
