@@ -5,27 +5,25 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - How do controlled components differ from uncontrolled components?
-  Uncontrolled takes form data from the DOM directly while controlled components take form data per render.
-  Uncontrolled is simpler to manage while controlled have a longer setup.
+  Controlled components: In controlled components, the value of the input field is controlled by React state. Whenever the value of the input changes, the state is updated, and the component is re-rendered with the new value. To set the value of the input field, you need to explicitly handle the onChange event and update the state.
+
+  Uncontrolled components: In uncontrolled components, the value of the input field is handled by the DOM itself. The value of the input is accessed through the DOM using refs or other methods, rather than being controlled by React state. Uncontrolled components do not require explicit event handling or state management for every input change.
 
 - What are some advantages of using uncontrolled components?
-
-  1. Full control over form data: You have complete control over the form data, allowing for easy manipulation, validation, and integration with other components or state management libraries.
-  2. Enhanced interactivity: Controlled components allow for fine-grained control and enable complex interactions with form inputs.
-  3. Improved data consistency: The form data is stored in the component's state, ensuring that the data is consistent with the component's rendering.
+  Simplicity: Uncontrolled components require less code and are generally simpler to implement.
+  Better performance: Since there is no state management involved, uncontrolled components can be faster in certain scenarios.
 
 - What are some advantages of using controlled components?
-
-  1. Simplicity: Uncontrolled components require less code and can be simpler to implement, especially for simple forms or when you want to delegate form handling to the browser.
-  2. Integration with non-React libraries: Uncontrolled components are useful when integrating with third-party libraries that expect standard HTML form behavior.
+  Full control: Controlled components provide a centralized way to manage and validate form input data.
+  Validation and error handling: With controlled components, you can easily validate and handle errors before submitting the form.
+  Easy access to form data: Since the form data is controlled by React state, it is readily available for processing or sending to an API.
 
 - Which style do you prefer?
   Controlled
 
 - What two props must you pass to an input for it to be "controlled"?
-
-  1. value: This prop sets the current value of the input field based on the component's state.
-  2. onChange: This prop specifies the event handler to be called when the value of the input changes. It allows you to update the component's state with the new value.
+  Value
+  onChange
 
 - What are some popular npm packages for creating forms in React?
   Formik, react hook form, redux-form, final form
