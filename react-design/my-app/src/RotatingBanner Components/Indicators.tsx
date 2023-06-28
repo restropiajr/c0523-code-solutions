@@ -1,4 +1,14 @@
-export default function Indicators({ items }: { items: string[] }) {
+type IndicatorProps = {
+  count: number;
+  currentIndex: number;
+  onCustomClick: (currentIndex: number) => void;
+};
+
+export default function Indicators({
+  count,
+  currentIndex,
+  onCustomClick,
+}: IndicatorProps) {
   return (
     <div className="flex">
       <button className="w-8 border border-solid border-black">0</button>
