@@ -1,10 +1,10 @@
 type NextButtonProps = {
-  onCustomClick: () => void;
+  onPrev: () => void;
 };
 
-export default function PrevButton({ onCustomClick }: NextButtonProps) {
+export default function PrevButton({ onPrev }: NextButtonProps) {
   function handleClick() {
-    onCustomClick();
+    onPrev();
   }
 
   return (

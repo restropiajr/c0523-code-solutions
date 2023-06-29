@@ -11,34 +11,34 @@ type RotatingBannerProps = {
 export default function RotatingBanner({ items }: RotatingBannerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  function handleCustomClickSelect(index: number) {
+  function handleOnPrev() {
+    setCurrentIndex((prevCurrentIndex) => {
+      return (prevCurrentIndex - 1 + items.length) % items.length;
+    });
+  }
+
+  function handleOnSelect(index: number) {
     setCurrentIndex((prevCurrentIndex) => {
       return index;
     });
   }
 
-  function handleCustomClickNext() {
+  function handleOnNext() {
     setCurrentIndex((prevCurrentIndex) => {
       return (prevCurrentIndex + 1) % items.length;
-    });
-  }
-
-  function handleCustomClickPrev() {
-    setCurrentIndex((prevCurrentIndex) => {
-      return (prevCurrentIndex - 1 + items.length) % items.length;
     });
   }
 
   return (
     <>
       <Banner item={items[currentIndex]} />
-      <PrevButton onCustomClick={handleCustomClickPrev} />
+      <PrevButton onPrev={handleOnPrev} />
       <Indicators
         count={items.length}
         currentIndex={currentIndex}
-        onCustomClick={handleCustomClickSelect}
+        onSelect={handleOnSelect}
       />
-      <NextButton onCustomClick={handleCustomClickNext} />
+      <NextButton onNext={handleOnNext} />
     </>
   );
 }

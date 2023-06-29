@@ -1,16 +1,16 @@
 type IndicatorProps = {
   count: number;
   currentIndex: number;
-  onCustomClick: (currentIndex: number) => void;
+  onSelect: (currentIndex: number) => void;
 };
 
 export default function Indicators({
   count,
   currentIndex,
-  onCustomClick,
+  onSelect,
 }: IndicatorProps) {
   function handleClick(index: number) {
-    onCustomClick(index);
+    onSelect(index);
   }
 
   function renderIndicator() {
@@ -18,6 +18,8 @@ export default function Indicators({
     for (let index = 0; index < count; index++) {
       indicators.push(
         <button
+          key={index}
+          type="button"
           onClick={() => handleClick(index)}
           className="rounded w-8 border border-solid border-black"
           style={
