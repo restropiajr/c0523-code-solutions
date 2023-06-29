@@ -1,70 +1,57 @@
-import { ChangeEvent, useState, KeyboardEvent } from 'react';
+import { ChangeEvent, useState, FormEvent } from 'react';
 
 export default function ValidatedInput() {
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState({
-    message: '',
-    displayStyle: '',
-    color: '',
-  });
+  const [message, setMessage] = useState('');
+
+  const iconDisplay =
+    password.length < 8 ? 'fa-solid fa-x' : 'fa-solid fa-check';
+  const iconColor =
+    password.length === 0 || (password.length >= 1 && password.length < 8)
+      ? 'red'
+      : 'green';
 
   function handleOnChange(event: ChangeEvent<HTMLInputElement>) {
-    setPassword((prevPassword) => {
-      return event.target.value;
-    });
-
     const newPassword = event.target.value;
 
-    setErrorMessage((prevErrorMessage) => {
+    setPassword((prevPassword) => {
+      return newPassword;
+    });
+
+    setMessage((prevMessage) => {
       if (newPassword.length === 0) {
-        return {
-          ...prevErrorMessage,
-          message: 'A password is required.',
-          displayStyle: 'fa-solid fa-x',
-          color: 'red',
-        };
+        return 'A password is required.';
       } else if (newPassword.length >= 1 && newPassword.length < 8) {
-        return {
-          ...prevErrorMessage,
-          message: 'Your password is too short.',
-          displayStyle: 'fa-solid fa-x',
-          color: 'red',
-        };
+        return 'Your password is too short.';
       } else {
-        return {
-          ...prevErrorMessage,
-          message: '',
-          displayStyle: 'fa-solid fa-check',
-          color: 'green',
-        };
+        return '';
       }
     });
   }
 
-  function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
-    if (event.key === 'Enter' && event.currentTarget.type === 'password') {
-      event.preventDefault();
-    }
+  function handleOnSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
   }
 
   return (
-    <form action="">
+    <form onSubmit={handleOnSubmit}>
       <label className="text-sm block" htmlFor="password">
         Password
       </label>
       <input
         value={password}
         onChange={handleOnChange}
-        onKeyDown={handleKeyDown}
         className="block border-2 border-solid border-black p-1 inline-block"
         id="password"
         type="password"
         name="password"
       />
-      <i
-        className={`${errorMessage.displayStyle} inline-block m-2`}
-        style={{ color: errorMessage.color }}></i>
-      <p className="text-xs text-red-600 my-1">{errorMessage.message}</p>
+      {password.length > 0 && (
+        <i
+          className={`${iconDisplay} inline-block m-2`}
+          style={{ color: iconColor }}></i>
+      )}
+      <p className="text-xs text-red-600 my-1">{message}</p>
     </form>
   );
 }
