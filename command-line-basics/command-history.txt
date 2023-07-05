@@ -1,0 +1,500 @@
+   11  git commit -m "es6-template-literals - Roland Estropia Jr."
+   12  git push origin es6-template-literals
+   13  git switch main
+   14  git switch es6-template-literals
+   15  git switch main
+   16  git pull origin main
+   17  git branch javascript-timers
+   18  git switch javascript-timers
+   19  git add javascript-timers
+   20  git commit -m "javascript-timers - Roland Estropia Jr."
+   21  git push origin javascript-timers
+   22  git switch main
+   23  git switch javascript-timers
+   24  git add javascript-timers
+   25  git commit -m "Updated interval.js"
+   26  git push origin javascript-timers
+   27  git add javascript-timers
+   28  git commit -m "Updated interval.js and timeout.js"
+   29  git push origin javascript-timers
+   30  git switch main
+   31  git pull origin main
+   32  git add .
+   33  git status
+   34  git commit -m "Updated .markuplintrc"
+   35  git push origin mmain
+   36  git status
+   37  git pull origin main
+   38  git status
+   39  git branch javascript-carousel
+   40  git switch javascript-carousel
+   41  git add javascript-carousel
+   42  git commit -m "javascript-carousel - Roland Estropia Jr."
+   43  git push origin javascript-carousel
+   44  git switch main
+   45  git pull origin main
+   46  git branch javascript-carousel
+   47  git switch javascript-carousel
+   48  git add javascript-carousel
+   49  git commit -m "Updated main.js"
+   50  git push origin javascript-carousel
+   51  git switch main
+   52  git switch javascript-carousel
+   53  git switch main
+   54  git branch http-messages
+   55  git switch http-messages
+   56  https httpie.io/hello
+   57  http http://www.example.com
+   58  http --verbose http://www.example.com
+   59  http --body GET hhtps://jsonplaceholder.typicode.comm/users > http-messages/users.json
+   60  http --body GET hhtps://jsonplaceholder.typicode.com/users > http-messages/users.json
+   61  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   62  http --body GET https://example.com > http-messages/index.html
+   63  git add http-messages
+   64  git commit -m "http-messages - Roland Estropia Jr."
+   65  git push origin http-messages
+   66  git switch main
+   67  git pull origin mmain
+   68  git pull origin main
+   69  http --body GET https://example.com > downloads/index.html
+   70  http: --body GET https://example.com > Documents/index.htmml
+   71  http: --body GET https://example.com > Documents/index.html
+   72  http: --body GET https://example.com > C:\Users\restr\OneDrive\Documents\Coding/index.html
+   73  http: --body GET https://example.com > C:\Users\restr\OneDrive\Documents\Coding\index.html
+   74  http --body GET https://example.com > C:\Users\restr\OneDrive\Documents\Coding/index.html
+   75  git switch main
+   76  git branch javascript-new
+   77  git switch javascript-new
+   78  git add javascript-new
+   79  git commit -m "javascript-new - Roland Estropia Jr."
+   80  git push origin javascript-new
+   81  git switch ain
+   82  git switch main
+   83  git pull origin main
+   84  git branch javascript-ajax
+   85  git switch javascript-ajax
+   86  git add javascript-ajax
+   87  git commit -m "javascript-ajax - Roland Estropia Jr."
+   88  git push origin javascript-ajax
+   89  git switch main
+   90  git pull origin main
+   91  git pull origin main
+   92  git add javascript-ajax
+   93  git commit -m "Created sample XMLHttpRequest"
+   94  git push origin ain
+   95  git push origin main
+   96  git pull origin main
+   97  git pull origin main
+   98  git pull origin main
+   99  git branch objects-revisited
+  100  git switch objects-revisited
+  101  git add objects-revisited
+  102  git commit -m "objects-revisted - Roland Estropia Jr."
+  103  git push origin objects-revisited
+  104  git add objects-revisited
+  105  git commit -m "Addressed comments for global function declaration and repetitive if statements"
+  106  git push origin objects-revisited
+  107  git add objects-revisited
+  108  git commit -m "Updated comments for functions"
+  109  git push origin objects-revisited
+  110  git switch main
+  111  git pull origin main
+  112  git branch es6-destructuring
+  113  git switch es6-destructuring
+  114  git add es6-destructuring
+  115  git commit -m "es6-destructuring - Roland Estropia Jr."
+  116  git push origin es6-destructuring
+  117  git switch main
+  118  git pull origin main
+  119  git branch es6-arrow-functions
+  120  git switch es6-arrow-functions
+  121  git add es6-arrow-functions
+  122  git commit -m "es6-arrow-functions - Roland Estropia Jr."
+  123  git push origin es6-arrow-functions
+  124  git add es6-arrow-function
+  125  git commit -m "Addressed comments"
+  126  git add es6-arrow-function
+  127  es6-arrow-functions
+  128  git add es6-arrow-functions
+  129  git commit -m "Addressed comments"
+  130  git push origin es6-arrow-functions
+  131  git switch main
+  132  git pull origin main
+  133  git branch array-methods
+  134  git switch array-methods
+  135  git add array-methods
+  136  git commit -m "array-methods - Roland Estropia Jr."
+  137  git push origin array-methods
+  138  git switch main
+  139  git pull origin main
+  140  git branch es6-operators
+  141  git switch es6-operators
+  142  git add es6-operators
+  143  git commit -m "es6-operators - Roland Estropia Jr."
+  144  git push origin es6-operators
+  145  git add es6-operators
+  146  got commit -m "Addressed ?. operator todo"
+  147  git commit -m "Addressed ?. operator todo"
+  148  git push origin es6-operators
+  149  git switch main
+  150  git pull origin main
+  151  git branch
+  152  git branch big-o-notation
+  153  git switch big-o-notation
+  154  git add big-o-notation
+  155  git commit -m "big-o-notation - Roland Estropia Jr."
+  156  git push origin big-o-notation
+  157  git switch main
+  158  git branch npm-intro
+  159  git switch npm-intro 
+  160  cd npm-intro
+  161  cp .npm-init.js ~/.npm-init.js
+  162  pm --init
+  163  npm --init
+  164  cp .npm-init.js ~/.npm-init.js
+  165  npm --init
+  166  cp .npm-init.js ~/.npm-init.js
+  167  npm init --yes
+  168  cp .npm-init.js ~/.npm-init.js
+  169  npm init --yes
+  170  npm init -y
+  171  npm install jquery
+  172  npm install --save-dev eslint
+  173  npm run hello
+  174  npm ru hello
+  175  npm run hello
+  176  ls ~/.npm-init.js
+  177  npm run hello
+  178  cd
+  179  /workspaces/c0523-code-solutions
+  180  cd /workspaces/c0523-code-solutions
+  181  git add npm-intro
+  182  git commit -m "npm-intro - Roland Estropia Jr."
+  183  git push origin npm-intro
+  184  git switch main
+  185  git branch
+  186  git switch big-o-notation
+  187  git add big-o-notation
+  188  git commit -m "Updated answer for uniqueQuadratic"
+  189  git push origin big-o-notation
+  190  git switch npm-intro
+  191  git switch main
+  192  git pull origin main
+  193  git branch webpack-and-babel
+  194  git switch webpack-and-babel
+  195  cd webpack-and-babel
+  196  git add webpack-and-babel
+  197  git add webpack-and-babel
+  198  cd ../
+  199  ggit add webpack-and-babel
+  200  git add webpack-and-babel
+  201  git commit -m "webpack-and-babel - Roland Estropia Jr."
+  202  git add .
+  203  git commit -m "webpack-and-babel - Roland Estropia Jr."
+  204  git push origin webpack-and-babel
+  205  git switch main
+  206  git pull origin main
+  207  git switch webpack-and-babel
+  208  cd
+  209  webpack-and-babel
+  210  cd webpack-and-babel
+  211  /
+  212  cd webpack-and-babel
+  213  git add . 
+  214  git commit -m "Removed file type from the path"
+  215  git status
+  216  git add react-intro
+  217  git commit -m "react-intro - Roland Estropia Jr."
+  218  git push origin react-intro
+  219  git switch main
+  220  git pull origin main
+  221  cd react-jsx
+  222  npm start
+  223  cd my-app
+  224  npm start
+  225  gid add react-jsx
+  226  git add react-jsx
+  227  git commit -m "react-jsx - Roland Estropia Jr."
+  228  git push origin react-jsx
+  229  git switch main
+  230  git branch react-components
+  231  git switch react-components
+  232  cd react-components
+  233  cd react-components
+  234  npx create-react-app my-app
+  235  cd my-app
+  236  npm start
+  237  cd react-components
+  238  cd my-app
+  239  cd 
+  240  git switch react-jsx
+  241  git switch main
+  242  git switch react-components
+  243  cd react-components
+  244  cd my-app
+  245  git switch main
+  246  git pull origin main
+  247  git branch react-props-and-expressions
+  248  git switch react-props-and-expressions
+  249  cd react-props-and-expressions
+  250  npx create-react-app my-app
+  251  cd my-app
+  252  npm start
+  253  npm start
+  254  git add react-props-and-expressions
+  255  git add react-props-and-expressions
+  256  git commit -m "react-props-and-expressions - Roland Estropia Jr."
+  257  git push origin react-props-and-expressions
+  258  git add react-props-and-expressions
+  259  git add react-props-and-expressions
+  260  git commit -m "Updated quiz answers"
+  261  git push origin react-props-and-expressions
+  262  git switch main
+  263  git branch react-events
+  264  git switch react-events
+  265  cd react-events
+  266  npx create-react-app my-app
+  267  cd my-app
+  268  npm start
+  269  npm start
+  270  npm start
+  271  git add react-evemts
+  272  git add react-events
+  273  git commit -m "react-events - Roland Estropia Jr."
+  274  git push origin react-events
+  275  git switch main
+  276  git branch react-state
+  277  git switch react-state
+  278  cd react-state
+  279  cd react-state
+  280  npx create-react-app my-app
+  281  cd my-app
+  282  npm start
+  283  git add react-state
+  284  git commit -m "react-state - Roland Estropia Jr."
+  285  git push origin react-state
+  286  git switch main
+  287  git switch react-state
+  288  git add react-state
+  289  git commit -m "Updated quiz answers"
+  290  git switch react-props-and-expressions
+  291  git switch react-events
+  292  git switch react-state
+  293  git branch --list
+  294  cd react-state
+  295  npx create-react-app my-app
+  296  cd my-app
+  297  npm start
+  298  npm start
+  299  git add react-state
+  300  git commit -m "react-state- Roland Estropia Jr."
+  301  git push origin react-state
+  302  git switch main
+  303  git switch react-state
+  304  cd react-state
+  305  cd my-app
+  306  npm start
+  307  git add react-hot-button-component
+  308  git status
+  309  git commit -m "react-hot-button-component - Roland Estropia Jr."
+  310  git push origin react-hot-button-component
+  311  git switch main
+  312  git branch react-toggle-switch-component
+  313  git switch react-toggle-switch-component
+  314  cd react-toggle-switch-component
+  315  npx create-react-app my-app
+  316  cd my-app
+  317  npm start
+  318  npm start
+  319  npm start
+  320  git add react-hot-button-component
+  321  git commit -m "Updated Hotbutton.jsx to combine the useState of backgroundColor and color"
+  322  git push origin react-hot-button-component
+  323  git switch main
+  324  git pull origin main
+  325  git switch react-toggle-switch-component
+  326  cd react-toggle-switch-component
+  327  cd my-app
+  328  npm start
+  329  git add react-toggle-switch-component
+  330  git commit -m "react-toggle-switch-component - Roland Estropia Jr."
+  331  git push origin react-toggle-switch-component
+  332  git switch main
+  333  git switch react-hot-button-component
+  334  cd react-hot-button-component
+  335  cd my-app
+  336  npm start
+  337  git add react-toggle-switch-component
+  338  git commit -m "Updated ToggleSwitch.jsx to combine wrapper style state into one"
+  339  git push origin react-toggle-switch-component
+  340  git switch main
+  341  it pull origin main
+  342  git pull origin main
+  343  git switch react-toggle-switch-component
+  344  cd react-toggle-switch-component
+  345  cd my-app
+  346  git pull origin main
+  347  git branch react-rendering-lists
+  348  git switch react-rendering-lists
+  349  cd react-rendering-lists
+  350  npx create-react-app my-app
+  351  npm start
+  352  cd my-app
+  353  npm start
+  354  npm start
+  355  git add react-validated-input-component
+  356  git commit -m "react-validated-input-component - Roland Estropia Jr."
+  357  git add .
+  358  git commit -m "react-validated-input-component - Roland Estropia Jr."
+  359  git status
+  360  git push origin react-validated-input-component
+  361  git switch main
+  362  git pull origin main
+  363  git pull origin main
+  364  git pull origin main
+  365  git switch react-validated-input-component
+  366  git swtich main
+  367  git switch main
+  368  git pull origin main
+  369  git switch react-validated-input-component
+  370  cd my-app
+  371  npm start
+  372  cd react-validated-input-component
+  373  cd my-app
+  374  npm start
+  375  npm start
+  376  git add react-validated-input-component
+  377  git commit -m "Updated handleOnChange function for ValidatedInput component"
+  378  git push origin react-validated-input-component
+  379  git switch main
+  380  git pull origin main
+  381  git switch react-form-controls
+  382  git add react-form-controls
+  383  git commit -m "Updated quiz answers"
+  384  git push origin react-form-controls
+  385  git switch main
+  386  git pull origin main
+  387  git branch react-design
+  388  git switch react-design
+  389  cd react-design
+  390  npx create-react-app --template typescript
+  391  npx create-react-all my-app --template typescript
+  392  npx create-react-app my-app --template typescript
+  393  cd my-app
+  394  npm start
+  395  npm install -D tailwindcss
+  396  npx tailwindcss init
+  397  npm run start
+  398  git add react-design
+  399  git commit -m "react-deisgn - Roland Estropia Jr."
+  400  git push origin react-design
+  401  git add react-design
+  402  git commit -m "Completed Phase 2"
+  403  git push origin react-design
+  404  git add react-design
+  405  git commit -m "Created indicators dynamically per items length"
+  406  git push origin react-design
+  407  git add react-design
+  408  git commit -m "Completed phase 3"
+  409  git push origin react-design
+  410  git switch main
+  411  git pull origin mainn
+  412  git pull origin main
+  413  git switch react-validated-input-component
+  414  cd react-validated-input-component
+  415  cd my-app
+  416  npm start
+  417  git add react-validated-input-component
+  418  git status
+  419  git status
+  420  cd react-validated-input-component
+  421  cd my-app
+  422  npm start
+  423  npm start
+  424  git pull origin main
+  425  git branch react-search-component
+  426  git switch react-search-component
+  427  cd react-search-component
+  428  npx create-react-app --template typescript
+  429  npx create-react-app my-app --template typescript
+  430  cd my-app
+  431  npm start
+  432  npm install -D tailwindcss
+  433  npx taildwindcss init
+  434  npx wildwindcss init
+  435  npx tailwindcss init
+  436  npm run start
+  437  npm install uuid
+  438  npm start
+  439  npm install uuid
+  440  npm install uuid
+  441  npm audit fix
+  442  npm audit fix --force
+  443  npm i uuid
+  444  npm uninstall uuid
+  445  npm start
+  446  git switch main
+  447  git switch react-search-component
+  448  cd my-app
+  449  npm start
+  450  cd
+  451  git add react-accordion-component
+  452  git commit -m "react-accordion-component - Roland"
+  453  git push origin react-accordion-component
+  454  git switch main
+  455  git switch react-search-component
+  456  cd my-app
+  457  npm start
+  458  npm start
+  459  git switch main
+  460  git pull origin main
+  461  git switch react-search-component
+  462  git branch react-search-component
+  463  git switch react-search-component
+  464  cd react-search-component
+  465  npx create-react-app my-app --template typescript
+  466  cd my-app
+  467  npm install -D tailwindcss
+  468  npx tailwindcss init
+  469  npm run start
+  470  git add react-search-component
+  471  git commit -m "Made searchbar not case-sensitive and now provides a fallback message"
+  472  git push origin react-search-component
+  473  git switch main
+  474  git pull origin main
+  475  git switch react-search-component
+  476  git switch main
+  477  git branch react-app-drawer-component
+  478  git switch react-app-drawer-component
+  479  cd react-app-drawer-component
+  480  npx create-react-app my-app --template typescript
+  481  npm install -D tailwindcss
+  482  npx tailwindcss init
+  483  npm install react-icons
+  484  cd my-app
+  485  git switch main
+  486  git switch main
+  487  git switch main
+  488  git switch react-search-component
+  489  cd react-search-component
+  490  cd my-app
+  491  npm start
+  492  git switch react-search-component
+  493  cd react-search-component
+  494  cd my-app
+  495  npm start
+  496  git switch main
+  497  cd react-state
+  498  cd my-app
+  499  npm start
+  500  git pull origin main
+  501  cd command-line-basics
+  502  man cp
+  503  cp and-then.txt no-and-then.txt
+  504  ls 
+  505  cat and-then.txt
+  506  cat no-and-then.txt
+  507  man cat
+  508  man history
+  509  history
+  510  history > command-history.txt
