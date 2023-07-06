@@ -17,7 +17,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   Export the function (named export or default export) at the declaration of the function.
 
 - In JavaScript, how do you use a function from another module?
-  import the function at the top of the module (use exact name if it was default export or use any variable name if it was named export).
+  import the function at the top of the module (use exact name if it was named export or use any variable name if it was default export).
 
 ## Notes
 
