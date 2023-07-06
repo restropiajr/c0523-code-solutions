@@ -2,6 +2,8 @@
 
 ## Notes
 
+Creating minor change for pull request
+
 All student notes should be written here.
 
 How to write `Code Examples` in markdown
