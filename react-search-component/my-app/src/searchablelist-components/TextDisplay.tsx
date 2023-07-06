@@ -1,9 +1,9 @@
-type TextDisplayProps = {
+type Props = {
   list: { id: string; sentence: string }[];
   searchText: string;
 };
 
-export default function TextDisplay({ list, searchText }: TextDisplayProps) {
+export default function TextDisplay({ list, searchText }: Props) {
   const filteredList = list.filter(({ sentence }) => {
     return sentence.toLowerCase().includes(searchText.toLowerCase());
   });

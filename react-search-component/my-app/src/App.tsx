@@ -1,7 +1,7 @@
 import './App.css';
-import SearchableList from './SearchableList Components/SearchableList';
+import SearchableList from './searchablelist-components/SearchableList';
 
-type List = { id: string; sentence: string }[];
+export type List = { id: string; sentence: string }[];
 
 const list: List = [
   {

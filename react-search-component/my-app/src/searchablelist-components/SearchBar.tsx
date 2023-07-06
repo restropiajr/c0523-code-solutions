@@ -1,11 +1,11 @@
 import { ChangeEvent } from 'react';
 
-type SearchBarProps = {
+type Props = {
   onSearch: (searchText: string) => void;
 };
 
-export default function SearchBar({ onSearch }: SearchBarProps) {
-  function handleOnChange(event: ChangeEvent<HTMLInputElement>) {
+export default function SearchBar({ onSearch }: Props) {
+  function handleChange(event: ChangeEvent<HTMLInputElement>) {
     onSearch(event.target.value);
   }
 
@@ -13,7 +13,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     <div>
       <label>
         <input
-          onChange={handleOnChange}
+          onChange={handleChange}
           className="m-2 p-1 border border-solid border-black rounded w-1/4"
           type="search"
           placeholder="Search"

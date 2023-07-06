@@ -1,15 +1,12 @@
 import SearchBar from './SearchBar';
 import TextDisplay from './TextDisplay';
 import { useState } from 'react';
+import { List } from '../App';
 
-type SearchableListProps = {
-  list: { id: string; sentence: string }[];
-};
-
-export default function SearchableList({ list }: SearchableListProps) {
+export default function SearchableList({ list }: { list: List }) {
   const [search, setSearch] = useState('');
 
-  function handleOnSearch(searchText: string) {
+  function handleSearch(searchText: string) {
     setSearch((prevSearchText) => {
       return searchText;
     });
@@ -17,7 +14,7 @@ export default function SearchableList({ list }: SearchableListProps) {
 
   return (
     <div>
-      <SearchBar onSearch={handleOnSearch} />
+      <SearchBar onSearch={handleSearch} />
       <TextDisplay list={list} searchText={search} />
     </div>
   );
