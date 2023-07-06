@@ -1,7 +1,7 @@
 import './App.css';
-import Accordion from './Accordion Components/Accordion';
+import Accordion from './accordion-components/Accordion';
 
-type Topics = { uuid: string; topic: string; description: string }[];
+export type Topics = { uuid: string; topic: string; description: string }[];
 
 const topics: Topics = [
   {

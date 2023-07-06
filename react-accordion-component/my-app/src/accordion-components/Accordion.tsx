@@ -1,13 +1,10 @@
 import { useState } from 'react';
+import { Topics } from '../App';
 
-type AccordionProps = {
-  topics: { uuid: string; topic: string; description: string }[];
-};
-
-export default function Accordion({ topics }: AccordionProps) {
+export default function Accordion({ topics }: { topics: Topics }) {
   const [expandTopic, setExpandTopic] = useState('');
 
-  function handleClick(uuid: string) {
+  function handleClick(uuid: string): void {
     if (expandTopic === uuid) {
       setExpandTopic((prevExpandTopic) => {
         return '';
