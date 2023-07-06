@@ -32,7 +32,7 @@ export default function App() {
     <div>
       <AppDrawer onClickMenu={handleOnClickMenu} menuItems={menuItems} />
       <div className="main-content flex justify-center items-center">
-        <h1 className="text-white text-6xl">{menuItem}</h1>
+        <h1 className="text-black text-6xl">{menuItem}</h1>
       </div>
     </div>
   );
