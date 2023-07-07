@@ -1,5 +1,5 @@
 import './App.css';
-import AppDrawer from './Components/AppDrawer';
+import AppDrawer from './components/AppDrawer';
 import { useState } from 'react';
 
 type MenuItems = { uuid: string; item: string }[];

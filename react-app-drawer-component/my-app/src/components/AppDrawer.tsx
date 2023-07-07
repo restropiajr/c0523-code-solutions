@@ -1,31 +1,16 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
-import { MouseEvent } from 'react';
 
-type AppDrawerProps = {
+type Props = {
   menuItems: { uuid: string; item: string }[];
   onClickMenu: (menuItem: string) => void;
 };
 
-export default function AppDrawer({ menuItems, onClickMenu }: AppDrawerProps) {
+export default function AppDrawer({ menuItems, onClickMenu }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
-  function handleOnClick(event: MouseEvent<HTMLDivElement>) {
-    if (event.currentTarget.id === 'toggler') {
-      setIsOpen((prevIsOpen) => {
-        return true;
-      });
-    } else if (event.currentTarget.id === 'menuOverlay') {
-      setIsOpen((prevIsOpen) => {
-        return false;
-      });
-    }
-  }
-
   function handleOnClickMenu(menuItem: string) {
-    setIsOpen((prevIsOpen) => {
-      return false;
-    });
+    setIsOpen(false);
     onClickMenu(menuItem);
   }
 
@@ -34,7 +19,7 @@ export default function AppDrawer({ menuItems, onClickMenu }: AppDrawerProps) {
       <div
         id="toggler"
         className="toggler m-4 cursor-pointer w-10 flex justify-center transition rounded-lg duration-200 ease-in-out hover:bg-red-500"
-        onClick={handleOnClick}>
+        onClick={() => setIsOpen(true)}>
         <GiHamburgerMenu size={32} color="white" />
       </div>
 
@@ -43,7 +28,7 @@ export default function AppDrawer({ menuItems, onClickMenu }: AppDrawerProps) {
         className={`menu-overlay bg-gray-500 bg-opacity-50 absolute inset-0 z-0 transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
-        onClick={handleOnClick}></div>
+        onClick={() => setIsOpen(false)}></div>
 
       <div
         className={`menu-content p-4 w-1/4 bg-white ring-4 ring-gray-600 absolute inset-0 z-10 transition-transform duration-500 ease-in-out ${
