@@ -4,12 +4,10 @@ import { readFile, writeFile } from 'node:fs/promises';
 async function readNotes() {
   const jsonData = await readFile('./data.json', 'utf8');
   const data = JSON.parse(jsonData);
-  const notes = [];
 
   for (const note in data.notes) {
-    notes.push(`${note}: ${data.notes[note]}`);
+    console.log(`${note}: ${data.notes[note]}`);
   }
-  notes.forEach((note) => console.log(note));
 }
 
 // Creating data to data.json
@@ -29,6 +27,7 @@ async function createNotes() {
 
   const jsonUpdatedData = JSON.stringify(updatedData, null, 2);
   await writeFile('./data.json', jsonUpdatedData);
+  console.log('Note Created!');
 }
 
 // Deleting data from data.json
@@ -36,7 +35,12 @@ async function deleteNotes() {
   const jsonData = await readFile('./data.json', 'utf8');
   const data = JSON.parse(jsonData);
 
-  delete data.notes[process.argv[3]];
+  if (process.argv[3] in data.notes) {
+    delete data.notes[process.argv[3]];
+    console.log('Note Deleted!');
+  } else {
+    console.log(`"${process.argv[3]}" is an invalid Id.`);
+  }
 
   const jsonUpdatedData = JSON.stringify(data, null, 2);
   await writeFile('./data.json', jsonUpdatedData);
@@ -47,7 +51,12 @@ async function updateNotes() {
   const jsonData = await readFile('./data.json', 'utf8');
   const data = JSON.parse(jsonData);
 
-  data.notes[process.argv[3]] = process.argv[4];
+  if (process.argv[3] in data.notes) {
+    data.notes[process.argv[3]] = process.argv[4];
+    console.log('Note Updated!');
+  } else {
+    console.log(`"${process.argv[3]}" is an invalid Id.`);
+  }
 
   const jsonUpdatedData = JSON.stringify(data, null, 2);
   await writeFile('./data.json', jsonUpdatedData);
