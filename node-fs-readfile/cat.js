@@ -1,15 +1,11 @@
 import { readFile } from 'node:fs/promises';
 
 async function readCatAnyFiles() {
-  const fileArray = process.argv.slice(2);
+  const files = process.argv.slice(2);
 
-  const promiseArray = fileArray.map(async (file) => {
-    const filePath = new URL(file, import.meta.url);
-    const contents = await readFile(filePath, { encoding: 'utf8' });
-    return contents;
-  });
+  const promises = files.map((file) => readFile(file, 'utf8'));
 
-  const fileContents = await Promise.all(promiseArray);
+  const fileContents = await Promise.all(promises);
   fileContents.forEach((fileContent) => {
     console.log(fileContent);
   });
@@ -18,5 +14,5 @@ async function readCatAnyFiles() {
 try {
   await readCatAnyFiles();
 } catch (error) {
-  console.error('Error:', error.message);
+  console.error('Error:', error);
 }
