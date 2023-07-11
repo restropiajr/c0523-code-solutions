@@ -15,10 +15,9 @@ type Data = {
   notes: Notes;
 };
 
-async function readNotes() {
+async function readNotes(): Promise<Data> {
   const jsonData = await readFile('./data.json', 'utf8');
-  const data: Data = JSON.parse(jsonData);
-  return data;
+  return JSON.parse(jsonData);
 }
 
 async function writeNotes(data: Data) {
@@ -41,6 +40,7 @@ app.get('/api/notes', async (req, res) => {
     res.status(200).json(notesArray);
   } catch (error) {
     console.error('Error Message:', error);
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
@@ -51,11 +51,9 @@ app.get('/api/notes/:id', async (req, res) => {
     const noteId = Number(req.params.id);
 
     if (noteId < 0) {
-      res
-        .status(400)
-        .json({
-          error: `Id ${noteId} is invalid. Please provide a positive integer.`,
-        });
+      res.status(400).json({
+        error: `Id ${noteId} is invalid. Please provide a positive integer.`,
+      });
       return;
     }
 
@@ -67,6 +65,7 @@ app.get('/api/notes/:id', async (req, res) => {
     res.status(200).json(notes[noteId]);
   } catch (error) {
     console.error('Error Message:', error);
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
@@ -110,11 +109,9 @@ app.delete('/api/notes/:id', async (req, res) => {
     const noteId = Number(req.params.id);
 
     if (noteId < 0) {
-      res
-        .status(400)
-        .json({
-          error: `Id ${noteId} is invalid. Please provide a positive integer.`,
-        });
+      res.status(400).json({
+        error: `Id ${noteId} is invalid. Please provide a positive integer.`,
+      });
       return;
     }
 
@@ -140,11 +137,9 @@ app.put('/api/notes/:id', async (req, res) => {
     const { content } = req.body;
 
     if (noteId < 0) {
-      res
-        .status(400)
-        .json({
-          error: `Id ${noteId} is invalid. Please provide a positive integer.`,
-        });
+      res.status(400).json({
+        error: `Id ${noteId} is invalid. Please provide a positive integer.`,
+      });
       return;
     }
 
