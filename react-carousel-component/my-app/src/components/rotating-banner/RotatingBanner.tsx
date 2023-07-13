@@ -1,7 +1,7 @@
-import Banner from './banner';
-import NextButton from './next-button';
-import PrevButton from './prev-button';
-import Indicators from './indicators';
+import Banner from './Banner';
+import NextButton from './NextButton';
+import PrevButton from './PrevButton';
+import Indicators from './Indicators';
 import { useEffect, useState } from 'react';
 import { Image } from '../../App';
 

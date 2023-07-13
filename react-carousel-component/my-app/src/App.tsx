@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import RotatingBanner from './components/rotating-banner-components/rotating-banner';
+import RotatingBanner from './components/rotating-banner/RotatingBanner';
 
 export type Image = {
   src: string;
