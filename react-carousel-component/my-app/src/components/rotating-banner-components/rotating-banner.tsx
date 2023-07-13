@@ -11,7 +11,7 @@ export default function RotatingBanner({ images }: { images: Image[] }) {
   useEffect(() => {
     const timerId = setTimeout(() => {
       setCurrentIndex((currentIndex + 1) % images.length);
-    }, 1500);
+    }, 3000);
 
     return () => clearTimeout(timerId);
   }, [currentIndex, images.length]);
