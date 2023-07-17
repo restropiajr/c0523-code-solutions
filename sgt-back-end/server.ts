@@ -17,7 +17,7 @@ type Grade = {
   name: string;
   course: string;
   score: number;
-  createdAt: string;
+  createdAt: Date;
 };
 
 app.use(express.json());
