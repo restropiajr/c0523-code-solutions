@@ -68,12 +68,9 @@ export default function Todos() {
       });
       if (!response.ok) throw new Error(`Error: ${response.status}`);
       const updatedTodo = await response.json();
-      const updatedTodos = todos.map((todo) => {
-        if (todo.todoId === updatedTodo.todoId) {
-          return updatedTodo;
-        }
-        return todo;
-      });
+      const updatedTodos = todos.map((todo) =>
+        todo.todoId === updatedTodo.todoId ? updatedTodo : todo
+      );
       setTodos(updatedTodos);
     } catch (error) {
       setError(error);
