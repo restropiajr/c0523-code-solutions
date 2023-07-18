@@ -35,7 +35,7 @@ export default function Todos() {
   }, []);
 
   /* Implement addTodo to add a new todo. Hints are at the bottom of the file. */
-  async function addTodo(newTodo: UnsavedTodo) {
+  async function addTodo(newTodo: UnsavedTodo): Promise<void> {
     try {
       const response = await fetch('api/todos', {
         method: 'POST',
@@ -54,7 +54,7 @@ export default function Todos() {
   }
 
   /* Implement toggleCompleted to toggle the completed state of a todo. Hints are at the bottom of the file. */
-  async function toggleCompleted(todoId: number) {
+  async function toggleCompleted(todoId: number): Promise<void> {
     const todoIndex = todos.findIndex((todo) => todo.todoId === todoId);
     const isCompleted = todos[todoIndex].isCompleted;
     const updatedisCompleted = { isCompleted: !isCompleted };
