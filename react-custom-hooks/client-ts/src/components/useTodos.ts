@@ -35,7 +35,7 @@ export function useTodos(): UseTodosValues {
         setError(error);
       }
     }
-    if (todos === undefined) {
+    if (!todos) {
       fetchTodos();
     }
   }, [todos]);
@@ -62,7 +62,7 @@ export function useTodos(): UseTodosValues {
      * Note that it is critical that you pass a _new_ array. Do not modify the `todos` array.
      */
     try {
-      if (todos !== undefined) {
+      if (todos) {
         const todoToUpdate = todos.find((todo) => todo.todoId === todoId);
         if (todoToUpdate) {
           const toggledTodo = {
