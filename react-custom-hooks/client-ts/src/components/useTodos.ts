@@ -66,17 +66,18 @@ export function useTodos(): UseTodosValues {
         throw new Error('Todos is undefined');
       }
       const todoToUpdate = todos.find((todo) => todo.todoId === todoId);
-      if (todoToUpdate) {
-        const toggledTodo = {
-          ...todoToUpdate,
-          isCompleted: !todoToUpdate.isCompleted,
-        };
-        const updatedTodo = await updateTodo(toggledTodo);
-        const updatedTodos = todos.map((todo) =>
-          todo.todoId === updatedTodo.todoId ? updatedTodo : todo
-        );
-        setTodos(updatedTodos);
+      if (!todoToUpdate) {
+        throw new Error('Cannot find todo');
       }
+      const toggledTodo = {
+        ...todoToUpdate,
+        isCompleted: !todoToUpdate.isCompleted,
+      };
+      const updatedTodo = await updateTodo(toggledTodo);
+      const updatedTodos = todos.map((todo) =>
+        todo.todoId === updatedTodo.todoId ? updatedTodo : todo
+      );
+      setTodos(updatedTodos);
     } catch (error) {
       setError(error);
     }
