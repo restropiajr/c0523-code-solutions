@@ -46,8 +46,11 @@ export function useTodos(): UseTodosValues {
      * Note that it is critical that you pass a _new_ array. Do not modify the `todos` array.
      */
     try {
+      if (!todos) {
+        throw new Error('todos is undefined');
+      }
       const createdTodo = await createTodo(newTodo);
-      const updatedTodos = [...(todos ?? []), createdTodo];
+      const updatedTodos = [...todos, createdTodo];
       setTodos(updatedTodos);
     } catch (error) {
       setError(error);
@@ -63,7 +66,7 @@ export function useTodos(): UseTodosValues {
      */
     try {
       if (!todos) {
-        throw new Error('Todos is undefined');
+        throw new Error('todos is undefined');
       }
       const todoToUpdate = todos.find((todo) => todo.todoId === todoId);
       if (!todoToUpdate) {
