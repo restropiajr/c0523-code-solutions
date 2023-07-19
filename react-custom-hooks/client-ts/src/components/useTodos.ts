@@ -62,21 +62,20 @@ export function useTodos(): UseTodosValues {
      * Note that it is critical that you pass a _new_ array. Do not modify the `todos` array.
      */
     try {
-      if (todos) {
-        const todoToUpdate = todos.find((todo) => todo.todoId === todoId);
-        if (todoToUpdate) {
-          const toggledTodo = {
-            ...todoToUpdate,
-            isCompleted: !todoToUpdate.isCompleted,
-          };
-          const updatedTodo = await updateTodo(toggledTodo);
-          const updatedTodos = todos.map((todo) =>
-            todo.todoId === updatedTodo.todoId ? updatedTodo : todo
-          );
-          setTodos(updatedTodos);
-        } else {
-          setError(new Error(`Todo item with id ${todoId} not found`));
-        }
+      if (!todos) {
+        throw new Error('Todos is undefined');
+      }
+      const todoToUpdate = todos.find((todo) => todo.todoId === todoId);
+      if (todoToUpdate) {
+        const toggledTodo = {
+          ...todoToUpdate,
+          isCompleted: !todoToUpdate.isCompleted,
+        };
+        const updatedTodo = await updateTodo(toggledTodo);
+        const updatedTodos = todos.map((todo) =>
+          todo.todoId === updatedTodo.todoId ? updatedTodo : todo
+        );
+        setTodos(updatedTodos);
       }
     } catch (error) {
       setError(error);
