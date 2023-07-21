@@ -54,7 +54,7 @@ function ProductCard({ product }: CardProps) {
   const { productId, name, price, imageUrl, shortDescription } = product;
   return (
     <Link
-      to={`/details/${productId}`}
+      to={`details/${productId}`}
       className="product text-dark card mb-4 shadow-sm text-decoration-none">
       {/* TODO: Instead of a div, the above should link to `/details/:productId` */}
       <img src={imageUrl} className="image card-img-top" alt={name} />

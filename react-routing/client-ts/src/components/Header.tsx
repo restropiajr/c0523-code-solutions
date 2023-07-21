@@ -9,7 +9,7 @@ export default function Header() {
           <ul className="navbar-nav mr-auto">
             {/* TODO: Make these links to About and Catalog, with className "title" */}
             <li className="nav-item nav-link">
-              <Link to="/about" className="title">
+              <Link to="about" className="title">
                 About
               </Link>
             </li>
