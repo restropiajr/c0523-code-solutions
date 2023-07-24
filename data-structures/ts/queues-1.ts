@@ -2,7 +2,6 @@
 import Queue from './lib/queue';
 
 export function getFront<T>(queue: Queue<T>): T | undefined {
-  if (queue.peek() === undefined) return undefined;
   return queue.peek();
 }
 

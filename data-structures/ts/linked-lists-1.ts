@@ -10,7 +10,6 @@ export function updateHead<T>(list: LinkedList<T>, value: T | null): void {
 }
 
 export function withoutHead<T>(list: LinkedList<T>): LinkedList<T> | null {
-  if (!list.data === null) return null;
   return list.next;
 }
 
