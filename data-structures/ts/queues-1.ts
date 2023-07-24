@@ -15,6 +15,5 @@ export function takeFront<T>(queue: Queue<T>): T | undefined {
 }
 
 export function isEmpty<T>(queue: Queue<T>): boolean {
-  if (queue.peek() === undefined) return true;
-  return false;
+  return queue.peek() === undefined;
 }
