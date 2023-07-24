@@ -2,7 +2,6 @@
 import Stack from './lib/stack';
 
 export function getTop<T>(stack: Stack<T>): T | undefined {
-  if (stack.peek() === undefined) return undefined;
   return stack.peek();
 }
 
@@ -11,7 +10,6 @@ export function addToTop<T>(stack: Stack<T>, value: T): void {
 }
 
 export function takeTop<T>(stack: Stack<T>): T | undefined {
-  if (stack.peek() === undefined) return undefined;
   return stack.pop();
 }
 

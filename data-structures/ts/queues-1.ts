@@ -10,7 +10,6 @@ export function addToBack<T>(queue: Queue<T>, value: T): void {
 }
 
 export function takeFront<T>(queue: Queue<T>): T | undefined {
-  if (queue.peek() === undefined) return undefined;
   return queue.dequeue();
 }
 

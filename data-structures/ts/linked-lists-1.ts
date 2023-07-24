@@ -14,7 +14,7 @@ export function withoutHead<T>(list: LinkedList<T>): LinkedList<T> | null {
 }
 
 export function prepend<T>(list: LinkedList<T>, value: T): LinkedList<T> {
-  const newNode = new LinkedList(value);
-  newNode.next = list;
-  return newNode;
+  const head = new LinkedList(value);
+  head.next = list;
+  return head;
 }
