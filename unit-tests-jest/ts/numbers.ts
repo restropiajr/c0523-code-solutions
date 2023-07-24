@@ -17,11 +17,7 @@ export function toDollars(amount: number): string {
  * given divisor. Does not modify the original array.
  */
 export function divideBy(numbers: number[], divisor: number): number[] {
-  const result: number[] = [];
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] === 0 && divisor === 0) {
-      result.push(NaN);
-    }
     numbers[i] = numbers[i] / divisor;
   }
   return numbers;
@@ -35,13 +31,10 @@ export function multiplyBy(
   obj: Record<string, unknown>,
   multiplier: number
 ): Record<string, unknown> {
-  const result: Record<string, unknown> = {};
-  Object.entries(obj).forEach(([key, value]) => {
-    if (typeof value === 'number') {
-      result[key] = Number(value) * multiplier;
-    } else {
-      result[key] = value;
+  for (const key in obj) {
+    if (typeof obj[key] === 'number') {
+      obj[key] = (obj[key] as number) * multiplier;
     }
-  });
-  return result;
+  }
+  return obj;
 }
